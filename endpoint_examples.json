@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "39eaa4aa-2817-47e0-983c-04f0b66c236e",
+		"name": "NodeMCU + WS2812",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Turn onboard LED on",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{DEFAULT_URL}}:{{DEFAULT_PORT}}/led_on",
+					"protocol": "http",
+					"host": [
+						"{{DEFAULT_URL}}"
+					],
+					"port": "{{DEFAULT_PORT}}",
+					"path": [
+						"led_on"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Turn onboard LED on (ledlan)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ledlan.blueskycatastrophe.art:8000/led_on",
+					"protocol": "http",
+					"host": [
+						"ledlan",
+						"blueskycatastrophe",
+						"art"
+					],
+					"port": "8000",
+					"path": [
+						"led_on"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Turn onboard LED off",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{DEFAULT_URL}}:{{DEFAULT_PORT}}/led_off",
+					"protocol": "http",
+					"host": [
+						"{{DEFAULT_URL}}"
+					],
+					"port": "{{DEFAULT_PORT}}",
+					"path": [
+						"led_off"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set RGB color at LED position",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pos",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{DEFAULT_URL}}/set_color",
+					"protocol": "http",
+					"host": [
+						"{{DEFAULT_URL}}"
+					],
+					"path": [
+						"set_color"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set HSV color at LED position",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pos",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{DEFAULT_URL}}/set_color",
+					"protocol": "http",
+					"host": [
+						"{{DEFAULT_URL}}"
+					],
+					"path": [
+						"set_color"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set HSV color at LED Range",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pos",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{DEFAULT_URL}}/set_color",
+					"protocol": "http",
+					"host": [
+						"{{DEFAULT_URL}}"
+					],
+					"path": [
+						"set_color"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set HSV color at LED position (ledlan)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pos",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "h",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "s",
+							"value": "255",
+							"type": "text"
+						},
+						{
+							"key": "v",
+							"value": "255",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ledlan.blueskycatastrophe.art:{{DEFAULT_PORT}}/set_hsv_color",
+					"protocol": "http",
+					"host": [
+						"ledlan",
+						"blueskycatastrophe",
+						"art"
+					],
+					"port": "{{DEFAULT_PORT}}",
+					"path": [
+						"set_hsv_color"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clear LEDs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{DEFAULT_URL}}:{{DEFAULT_PORT}}/clear",
+					"protocol": "http",
+					"host": [
+						"{{DEFAULT_URL}}"
+					],
+					"port": "{{DEFAULT_PORT}}",
+					"path": [
+						"clear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IPify - Public IP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.ipify.org",
+					"protocol": "http",
+					"host": [
+						"api",
+						"ipify",
+						"org"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send test GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{DEFAULT_URL}}:{{DEFAULT_PORT}}/testget",
+					"protocol": "http",
+					"host": [
+						"{{DEFAULT_URL}}"
+					],
+					"port": "{{DEFAULT_PORT}}",
+					"path": [
+						"testget"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send test POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "test",
+							"value": "Some test data2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{DEFAULT_URL}}:{{DEFAULT_PORT}}/testpost",
+					"protocol": "http",
+					"host": [
+						"{{DEFAULT_URL}}"
+					],
+					"port": "{{DEFAULT_PORT}}",
+					"path": [
+						"testpost"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "DEFAULT_URL",
+			"value": "192.168.1.22"
+		},
+		{
+			"key": "DEFAULT_PORT",
+			"value": "8000"
+		}
+	]
+}

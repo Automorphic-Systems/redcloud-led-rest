@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "8ae51d23-9bb6-4da1-b02a-d84c935daee1",
+		"name": "Redcloud - REST Operations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Set Rainbow Mode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mode",
+							"value": "rainbow",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{DEFAULT_URL}}:{{DEFAULT_PORT}}/set_mode",
+					"protocol": "http",
+					"host": [
+						"{{DEFAULT_URL}}"
+					],
+					"port": "{{DEFAULT_PORT}}",
+					"path": [
+						"set_mode"
+					],
+					"query": [
+						{
+							"key": "mode",
+							"value": "rainbow",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Streak",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mode",
+							"value": "rainbow",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{DEFAULT_URL}}:{{DEFAULT_PORT}}/set_mode",
+					"protocol": "http",
+					"host": [
+						"{{DEFAULT_URL}}"
+					],
+					"port": "{{DEFAULT_PORT}}",
+					"path": [
+						"set_mode"
+					],
+					"query": [
+						{
+							"key": "mode",
+							"value": "rainbow",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Chase Mode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mode",
+							"value": "rainbow",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{DEFAULT_URL}}:{{DEFAULT_PORT}}/set_mode",
+					"protocol": "http",
+					"host": [
+						"{{DEFAULT_URL}}"
+					],
+					"port": "{{DEFAULT_PORT}}",
+					"path": [
+						"set_mode"
+					],
+					"query": [
+						{
+							"key": "mode",
+							"value": "rainbow",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Flicker",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mode",
+							"value": "flicker",
+							"type": "text"
+						},
+						{
+							"key": "twink_min",
+							"value": "48",
+							"type": "text"
+						},
+						{
+							"key": "twink_max",
+							"value": "160",
+							"type": "text"
+						},
+						{
+							"key": "color_count",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "fade_rate",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "twink_thr",
+							"value": "32",
+							"type": "text"
+						},
+						{
+							"key": "boost_thr",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "boost_rate",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "seed_amt",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "max_iter",
+							"value": "300",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{DEFAULT_URL}}:{{DEFAULT_PORT}}/set_mode",
+					"protocol": "http",
+					"host": [
+						"{{DEFAULT_URL}}"
+					],
+					"port": "{{DEFAULT_PORT}}",
+					"path": [
+						"set_mode"
+					],
+					"query": [
+						{
+							"key": "mode",
+							"value": "rainbow",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Default Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{DEFAULT_URL}}:{{DEFAULT_PORT}}/",
+					"protocol": "http",
+					"host": [
+						"{{DEFAULT_URL}}"
+					],
+					"port": "{{DEFAULT_PORT}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "DEFAULT_URL",
+			"value": "192.168.1.14"
+		},
+		{
+			"key": "DEFAULT_PORT",
+			"value": "8000"
+		}
+	]
+}
